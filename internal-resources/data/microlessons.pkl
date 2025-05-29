@@ -9,23 +9,38 @@ setup = new Template.Microlesson {
   videoUrl = ""
 }
 
-concepts = new Template.Microlesson {
-  friendlyName = "Concepts"
-  dirName = "concepts"
+introductionToDataDrivenTesting = new Template.Microlesson {
+  friendlyName = "Introduction to Data-Driven Testing"
+  dirName = "introduction-to-data-driven-testing"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson01 = new Template.Microlesson {
-  friendlyName = "Microlesson 01"
-  dirName = "microlesson-01"
+workingWithExternalDataSources = new Template.Microlesson {
+  friendlyName = "Working with External Data Sources"
+  dirName = "working-with-external-data-sources"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson02 = new Template.Microlesson {
-  friendlyName = "Microlesson 02"
-  dirName = "microlesson-02"
+parameterizingSeleniumTests = new Template.Microlesson {
+  friendlyName = "Parameterizing Selenium Tests"
+  dirName = "parameterizing-selenium-tests"
   type = "Content"
   videoUrl = ""
 }
+
+integratingApiDataInSeleniumTests = new Template.Microlesson {
+  friendlyName = "Integrating API Data in Selenium Tests"
+  dirName = "integrating-api-data-in-selenium-tests"
+  type = "Content"
+  videoUrl = ""
+}
+
+refactoringForScalabilityAndClarity = new Template.Microlesson {
+  friendlyName = "Refactoring for Scalability and Clarity"
+  dirName = "refactoring-for-scalability-and-clarity"
+  type = "Content"
+  videoUrl = ""
+}
+
