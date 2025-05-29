@@ -105,7 +105,7 @@ Here’s how data-driven testing works in practice:
 
 <div class="activity guided-walkthrough">
   <h2 class="title">Turn a Basic Selenium Test into a Data-Driven Test</h2>
-  <span class="minutes">10 min</span>
+  <span class="minutes">15 min</span>
 </div>
 
 Practice refactoring a hard-coded Selenium test to use a CSV file for input. This helps improve test reuse, reduce duplication, and increase coverage across varied scenarios.
