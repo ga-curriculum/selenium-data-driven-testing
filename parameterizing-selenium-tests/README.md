@@ -206,75 +206,75 @@ In this exercise, you’ll:
 
 1. **For this exercise, use the 📄 `registration.html` file created during setup.**
 
-<img src="./assets/registration.png" alt="" width="600" />
+   <img src="./assets/registration.png" alt="" width="600" />
 
-<br>
+   <br>
 
 2. **Create a new 📄 `registration.csv` file with the following contents:**
 
-```plaintext
-username,email,password
-samira.liu,samira@email.com,Hello#2024
-eli.otieno,eli@email.net,Pa$$w0rd!
-sofia.ruiz,sofia@correo.mx,ClaveSegura8
-```
+   ```plaintext
+   username,email,password
+   samira.liu,samira@email.com,Hello#2024
+   eli.otieno,eli@email.net,Pa$$w0rd!
+   sofia.ruiz,sofia@correo.mx,ClaveSegura8
+   ```
 
-- ✅ Optional: Add more rows as global edge cases—for instance, single-character usernames, emails in different scripts, or special symbols in passwords.
+   - ✅ Optional: Add more rows as global edge cases—for instance, single-character usernames, emails in different scripts, or special symbols in passwords.
 
 3. **Create a new 📄 `registration_test.py` test file and start from a basic, non-parameterized test:**
 
-```python
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+   ```python
+   from selenium import webdriver
+   from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+   driver = webdriver.Chrome()
 
-def test_register_basic():
-    driver.get("file:///Users/username/path/to/registration.html")  # Replace with your actual file path
-    driver.find_element(By.ID, "username").send_keys("samira.liu")
-    driver.find_element(By.ID, "email").send_keys("samira@email.com")
-    driver.find_element(By.ID, "password").send_keys("Hello#2024")
-    driver.find_element(By.ID, "submit").click()
-    # Add assertions here
-    driver.quit()
-```
+   def test_register_basic():
+       driver.get("file:///Users/username/path/to/registration.html")  # Replace with your actual file path
+       driver.find_element(By.ID, "username").send_keys("samira.liu")
+       driver.find_element(By.ID, "email").send_keys("samira@email.com")
+       driver.find_element(By.ID, "password").send_keys("Hello#2024")
+       driver.find_element(By.ID, "submit").click()
+       # Add assertions here
+       driver.quit()
+   ```
 
-4. **Refactor: Implement parameterization and run your test**
+4. **Refactor: Implement parameterization and run your test. Try to implement on your own before referencing the solution below.**
 
-```python
-import pytest
-import csv
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+   ```python
+   import pytest
+   import csv
+   from selenium import webdriver
+   from selenium.webdriver.common.by import By
 
-def load_registration_data():
-    with open("registration.csv", newline='') as csvfile:
-        reader = csv.reader(csvfile)
-        next(reader)  # Skip the header row
-        return [tuple(row) for row in reader]
+   def load_registration_data():
+       with open("registration.csv", newline='') as csvfile:
+           reader = csv.reader(csvfile)
+           next(reader)  # Skip the header row
+           return [tuple(row) for row in reader]
 
-@pytest.mark.parametrize("username,email,password", load_registration_data())
-def test_register_data_driven(username, email, password):
-    driver = webdriver.Chrome()
-    driver.get("file:///Users/username/path/to/registration.html")  # Replace with your actual file path
+   @pytest.mark.parametrize("username,email,password", load_registration_data())
+   def test_register_data_driven(username, email, password):
+       driver = webdriver.Chrome()
+       driver.get("file:///Users/username/path/to/registration.html")  # Replace with your actual file path
 
-    driver.find_element(By.ID, "username").clear()
-    driver.find_element(By.ID, "username").send_keys(username)
+       driver.find_element(By.ID, "username").clear()
+       driver.find_element(By.ID, "username").send_keys(username)
 
-    driver.find_element(By.ID, "email").clear()
-    driver.find_element(By.ID, "email").send_keys(email)
+       driver.find_element(By.ID, "email").clear()
+       driver.find_element(By.ID, "email").send_keys(email)
 
-    driver.find_element(By.ID, "password").clear()
-    driver.find_element(By.ID, "password").send_keys(password)
+       driver.find_element(By.ID, "password").clear()
+       driver.find_element(By.ID, "password").send_keys(password)
 
-    driver.find_element(By.ID, "submit").click()
+       driver.find_element(By.ID, "submit").click()
 
-    # Add assertions here (e.g., check for success message)
+       # Add assertions here (e.g., check for success message)
 
-    driver.quit()
-```
+       driver.quit()
+   ```
 
-> 🏆 As requirements change or more cases are needed, you only need to edit the CSV.
+   > 🏆 As requirements change or more cases are needed, you only need to edit the CSV.
 
 5. **Run your tests**
 
@@ -294,7 +294,7 @@ def test_register_data_driven(username, email, password):
    - Unicode email addresses
    - Passwords with symbols, spaces, or different character sets
 
-This shows how data-driven testing supports global coverage without increasing your test code size.
+   This shows how data-driven testing supports global coverage without increasing your test code size.
 
 ## Knowledge check
 

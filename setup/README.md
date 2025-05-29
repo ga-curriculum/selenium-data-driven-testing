@@ -40,7 +40,7 @@ venv\Scripts\activate
 
 You should now see (venv) at the start of your terminal prompt.
 
-### 3: Install Selenium
+### 3: Install Dependencies
 
 With the virtual environment active, install `Selenium` and `pytest` using pip:
 

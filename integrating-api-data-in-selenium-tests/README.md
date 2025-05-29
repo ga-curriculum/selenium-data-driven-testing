@@ -75,7 +75,7 @@ The temperature displayed in this html widget is hardcoded, since this is not a 
 
 ### Step 1: Import your tools
 
-**Create a new test file called `test_temperature_widget.py`, and include these imports:**
+**Create a new test file called 📄 `test_temperature_widget.py`, and include these imports:**
 
 ```python
 import requests

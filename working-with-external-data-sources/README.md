@@ -157,8 +157,8 @@ As your application features grow, so will your test data. Well-structured data 
 - Use **nested structures** (in JSON) for grouped data, such as a profile with both address and preferences
 
 <div class="activity solo-exercise">
-  <h2 class="title">Complete a moderately sized puzzle</h2>
-  <span class="minutes">10 min</span>
+  <h2 class="title">Refactoring tests to use external data</h2>
+  <span class="minutes">15 min</span>
 </div>
 
 Now it’s your turn to work directly with these formats. You’ll load external data, analyze its structure, and connect the dots to real automation workflows.
@@ -175,7 +175,7 @@ You’re working on a login testing feature. Instead of writing separate test ca
 
 1. **Create two new data files called:**
 
-**📄 login.csv**
+   **📄 login.csv**
 
 ```csv
 username,password
@@ -223,11 +223,11 @@ with open("login.csv", newline='') as csvfile:
 driver.quit()
 ```
 
-4. Try it again using `JSON`
+3. Try it again using `JSON`
 
-**Create a test script called 📄 `test_login_json.py`:**
+   **Create a test script called 📄 `test_login_json.py`:**
 
-Use the first test as your guide and write a test that uses the json data.
+   Use the first test as your guide and write a test that uses the json data.
 
 <div class="activity discussion">
   <h2 class="title">Reflect</h2>
