@@ -33,8 +33,8 @@ This module introduces students to data-driven testing techniques in Selenium. I
 
 ### Course landing pages
 
-- [PTR - Python Testing & Reliability](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-data-driven-testing/canvas-landing-pages/ptr.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-data-driven-testing/canvas-landing-pages/fallback.html)
+- [PTR - Python Testing & Reliability](https://ga-curriculum.github.io/selenium-data-driven-testing/canvas-landing-pages/ptr.html)
+- [Fallback](https://ga-curriculum.github.io/selenium-data-driven-testing/canvas-landing-pages/fallback.html)
 
 ### Resources
 
@@ -46,4 +46,4 @@ This module introduces students to data-driven testing techniques in Selenium. I
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://ga-curriculum.github.io/universal-resources-internal/module-feedback.html)!**
